@@ -1,0 +1,171 @@
+.Header {
+  background: linear-gradient(to top, #1c283d 50%, #9aa538 100%);
+  background-color: #b3e011;
+  color: #ffffffbd;
+  font-family: Arial;
+  font-size: 30px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+  text-align: center;
+  margin-right: -16px;
+  margin-left: -16px;
+  margin-top: -20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.FormLabel {
+  background: linear-gradient(to bottom, #a7b9d8 50%, #c9d3e7 90%);
+  background-color: #5170a7;
+  border-radius: 17px;
+  border: 1px solid #1f2f47;
+  display: inline-block;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 30px;
+  padding: 6px 13px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+}
+
+.FormInput {
+  box-shadow: inset 0px 0px 15px 3px #96a6c5a6;
+  background: linear-gradient(to bottom, #2e466e 5%, #53678d 100%);
+  background-color: #6f85aa;
+  border-radius: 17px;
+  border: 1px solid #1f2f47;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 30px;
+  padding: 6px 13px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2e3c64;
+}
+
+#Form-input {
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 10px;
+}
+
+.FormInput:hover {
+  background: linear-gradient(to bottom, #abb9d6 5%, #adb9ce 100%);
+  background-color: #375792;
+  /*font-size: 100px;*/
+}
+.FormInput:active {
+  position: relative;
+  top: 1px;
+}
+
+.Output-group {
+  text-align: center;
+  position: absolute;
+  top: 1;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, #415989 10%, #2e466e 100%);
+}
+
+.Centering {
+  text-align: center;
+}
+
+.NoteOutput {
+  margin-top: 5px;
+  font-size: 30px;
+  display: inline-grid;
+  padding: 5px 15px 10px 15px;
+  box-shadow: inset 0px 0px 15px 3px #8199c2;
+  background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+  background-color: #2e466e;
+  border-radius: 17px;
+  border: 1px solid #1f2f47;
+  color: #ffffff;
+  text-shadow: 0px 1px 0px #263666;
+
+  margin-right: 10px;
+  margin-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.NoteOutput:hover {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.Form-div {
+  text-align: center;
+  font-size: 30px;
+  background: linear-gradient(to bottom, #2e466e 1%, #415989 100%);
+
+  margin-right: -16px;
+  margin-left: -16px;
+  margin-top: -20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a0a0a0;
+  opacity: 1; /* Firefox */
+}
+
+#Form-Cance {
+  margin-left: 5px;
+}
+
+.EditOutput {
+  margin-right: 10px;
+  margin-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Form-div {
+    font-size: 20px;
+  }
+  .FormInput {
+    font-size: 20px;
+  }
+  .FormLabel {
+    font-size: 20px;
+  }
+  .NoteOutput {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .Form-div {
+    font-size: 15px;
+  }
+  .FormInput {
+    font-size: 15px;
+  }
+  .FormLabel {
+    font-size: 15px;
+  }
+  .NoteOutput {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .Form-div {
+    font-size: 10px;
+  }
+  .FormInput {
+    font-size: 10px;
+  }
+  .FormLabel {
+    font-size: 10px;
+  }
+  .NoteOutput {
+    font-size: 10px;
+  }
+}

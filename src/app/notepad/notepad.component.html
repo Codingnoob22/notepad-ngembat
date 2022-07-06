@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Font Awesome Icons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <form>
+      <div class="Header">
+        <h3>NotePad</h3>
+      </div>
+      <div class="Form-div">
+        <form (submit)="note.value = ''">
+          <!-- <label class="FormLabel">Note</label> -->
+          <input
+            type="text"
+            #note
+            [(ngModel)]="NoteMessage"
+            class="FormInput"
+            name="NoteMessage"
+            placeholder="note anda"
+            id="Form-input"
+          />
+          <button class="FormInput" (click)="AddNote()">add</button>
+        </form>
+      </div>
+      <div class="Output-group">
+        <div class="Centering" *ngFor="let Message of MessageIO; let indexNote">
+          <span>
+            <div class="NoteOutput" (click)="ShowButton(indexNote)">
+              {{ Message.NoteMessage }}
+            </div>
+            <div class="NoteOutput" *ngIf="showButton[Message.index] == true">
+              <span>
+                <i
+                  class="fa fa-edit"
+                  (click)="EditNote(Message)"
+                  id="Form-Edit"
+                ></i>
+                <i
+                  class="fa fa-close"
+                  (click)="RemoveNote(Message)"
+                  id="Form-Cancel"
+                ></i>
+              </span>
+            </div>
+          </span>
+          <div
+            *ngIf="
+              showButtonEdit[Message.index] == true &&
+              showButton[Message.index] == true
+            "
+          >
+            <form (submit)="edit.value = ''" class="EditOutput">
+              <input
+                type="text"
+                #edit
+                [(ngModel)]="EditedMessage"
+                class="FormInput"
+                name="EditMessageInput"
+                placeholder="Enter your edited version"
+                id="Form-input"
+              />
+              <button class="FormInput" (click)="EditMessage(indexNote)">
+                Edit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
