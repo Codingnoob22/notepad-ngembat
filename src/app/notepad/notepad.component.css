@@ -1,5 +1,5 @@
 .Header {
-  background: linear-gradient(to top, #1c283d 50%, #9aa538 100%);
+  background: linear-gradient(to top, #6e85b7 50%, #f8f9d7 100%);
   background-color: #b3e011;
   color: #ffffffbd;
   font-family: Arial;
@@ -15,10 +15,10 @@
 }
 
 .FormLabel {
-  background: linear-gradient(to bottom, #a7b9d8 50%, #c9d3e7 90%);
+  background: linear-gradient(to bottom, #b2c8df 50%, #b2c8df 90%);
   background-color: #5170a7;
   border-radius: 17px;
-  border: 1px solid #1f2f47;
+  border: 1px solid #b2c8df;
   display: inline-block;
   color: #ffffff;
   font-family: Arial;
@@ -30,13 +30,13 @@
 
 .FormInput {
   box-shadow: inset 0px 0px 15px 3px #96a6c5a6;
-  background: linear-gradient(to bottom, #2e466e 5%, #53678d 100%);
+  background: linear-gradient(to bottom, #b2c8df 5%, #829bca 100%);
   background-color: #6f85aa;
   border-radius: 17px;
-  border: 1px solid #1f2f47;
+  border: 1px solid #b7d3df;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
+  color: #f7f7f7;
   font-family: Arial;
   font-size: 30px;
   padding: 6px 13px;
@@ -51,7 +51,7 @@
 }
 
 .FormInput:hover {
-  background: linear-gradient(to bottom, #abb9d6 5%, #adb9ce 100%);
+  background: linear-gradient(to bottom, #2eade4 5%, #78a0e6 100%);
   background-color: #375792;
   /*font-size: 100px;*/
 }
@@ -67,7 +67,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to bottom, #415989 10%, #2e466e 100%);
+  background: linear-gradient(to bottom, #b7d3df 10%, #306dd4 100%);
 }
 
 .Centering {
@@ -80,7 +80,7 @@
   display: inline-grid;
   padding: 5px 15px 10px 15px;
   box-shadow: inset 0px 0px 15px 3px #8199c2;
-  background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+  background: linear-gradient(to bottom, #2eade4 5%, #78a0e6 100%);
   background-color: #2e466e;
   border-radius: 17px;
   border: 1px solid #1f2f47;
@@ -101,7 +101,7 @@
 .Form-div {
   text-align: center;
   font-size: 30px;
-  background: linear-gradient(to bottom, #2e466e 1%, #415989 100%);
+  background: linear-gradient(to bottom, #b7d3df 1%, #b7d3df 100%);
 
   margin-right: -16px;
   margin-left: -16px;
